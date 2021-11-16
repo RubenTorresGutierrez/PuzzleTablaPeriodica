@@ -1,30 +1,49 @@
-/** vista.js
- *  Puzzle Tabla Periódica | V1.0.0
+/** 
+ *  @file Vista | Puzzle Tabla Periódica
+ *  @description Clase vista que sirve para manejar el diseño de la web
+ *  @version 1.0.0
  *  @author Abel Mansilla Felipe <amansillafelipe.guadalupe@alumnado.fundacionloyola.net>
  *  @author Juanjo Carrasco Rodríguez <jcarrascorodriguez.guadalupe@alumnado.fundacionloyola.net>
  *  @author Alejandro Moreno Camacho <amorenocamacho.guadalupe@alumnado.fundacionloyola.net>
  *  @author Rubén Torres Gutiérrez <rtorresgutierrez.guadalupe@alumnado.fundacionloyola.net>
- *  @license GNU GPLv3
+ *  @license LGPL-3.0-or-later
  */
 
  'use strict'
 
  // IMPORTACIONES
- import {Vista} from './vista.js';
- import {Modelo} from './modelo.js';
+ import {Sprite} from './sprite.js';
 
-class Vista{
+ /**
+  * Clase vista que sirve para manejar el diseño de la web
+  */
+export class Vista{
 
     constructor(){
 
-        
+        this.contenedorElementos = null;
+        this.imagen = [];
+        this.sprites = []
 
     }
 
+    /**
+     * Crea un objeto de la clase Sprite() dentro del array sprites[]
+     */
     crearElementos(){
+ 
+        this.sprites.push(new Sprite(this.contenedorElementos))
 
-        let contenedorElementos = this.main.getElementById('elementos');
-        let elementos = 
+    }
+
+    /**
+     * Llama al método mover() de todos los objetos de la clase Sprite existentes
+     */
+    movimiento(){
+
+        // Llamar a la función para mover el muñeco
+        for(let i = 0; i<this.sprites.length;i++)
+            this.sprites[i].mover();
 
     }
 
