@@ -23,7 +23,14 @@ h1{
     margin: 1.25em 0;
 }
 
-/*** MAIN ***/
+/***** MAIN *****/
+
+/*** ELEMENTOS ***/
+#elementos{
+    position: relative;
+}
+
+/*** TABLA ***/
 .tabla{
     /* width: 1280px; */
     width: 90vw;
@@ -45,6 +52,7 @@ h1{
     height: auto;
     /*margin: 15px;*/
 }
+
 
 /*** COLORES ***/
 .azul{
