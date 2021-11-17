@@ -51,27 +51,19 @@ class Controlador{
       window.setInterval(this.vista.movimiento.bind(this.vista), 100);
 
       //PRUEBA___________________
-      window.onload = prueba();
+      ponerId();
+
+      function ponerId(){
+        let divs = document.querySelectorAll('.tabla div')
+        let contador = 0
+        for (let div of divs)
+          div.setAttribute('data-value', contador++)
+      }
+
       function prueba(){
         document.getElementsByClassName('tabla')[0].addEventListener('click', function(e){
-          let child_element  = document.getElementsByTagName('div')[0];
-          let parent_element = child_element.parentNode;
-          let i = Array.prototype.indexOf.call(parent_element.children, child_element);
             GetGridElementsPosition(i);
-        });
-      };
-
-      function GetGridElementsPosition(index){
-        console.log(index)
-        const colCount = document.getElementsByClassName('tabla').style.cssText= 'grid-template-columns'.split(' ').length;
-
-        const row = Math.floor(index / colCount);
-        const col = index % colCount;
-
-        console.log(row);
-        console.log(col);
-
-        return { row: row, column: col } ;
+        })
       }
     }
 }
