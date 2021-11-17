@@ -1,4 +1,4 @@
-/** 
+/**
  *  @file Controlador | Puzzle Tabla Periódica
  *  @description Controlador principal del juego
  *  @version 1.0.0
@@ -38,21 +38,42 @@ class Controlador{
      * Realiza la ejecución principal del programa
      */
     iniciar(){
+      // ATRIBUTOS
+      // Atributos controlador
+      this.main = document.getElementsByTagName('main')[0];
 
-        // ATRIBUTOS
-        // Atributos controlador
-        this.main = document.getElementsByTagName('main')[0];
+      // Atributos vista
+      this.vista.contenedorElementos = document.getElementById('elementos');
 
-        // Atributos vista
-        this.vista.contenedorElementos = document.getElementById('elementos');
+      // COMIENZO DEL JUEGO
+      // Creación de elementos
+      window.setInterval(this.vista.crearElementos.bind(this.vista), 2000);
+      window.setInterval(this.vista.movimiento.bind(this.vista), 100);
 
-        // COMIENZO DEL JUEGO
-        // Creación de elementos
-        window.setInterval(this.vista.crearElementos.bind(this.vista), 2000);
-        window.setInterval(this.vista.movimiento.bind(this.vista), 100);
+      //PRUEBA___________________
+      window.onload = prueba();
+      function prueba(){
+        document.getElementsByClassName('tabla')[0].addEventListener('click', function(e){
+          let child_element  = document.getElementsByTagName('div')[0];
+          let parent_element = child_element.parentNode;
+          let i = Array.prototype.indexOf.call(parent_element.children, child_element);
+            GetGridElementsPosition(i);
+        });
+      };
 
+      function GetGridElementsPosition(index){
+        console.log(index)
+        console.log(document.getElementsByClassName('div'));
+
+        const row = Math.floor(index / colCount);
+        const col = index % colCount;
+
+        console.log(row);
+        console.log(col);
+
+        return { row: row, column: col } ;
+      }
     }
-
 }
 
 let app = new Controlador();

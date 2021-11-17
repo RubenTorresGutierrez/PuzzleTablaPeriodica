@@ -48,34 +48,3 @@ export class Vista{
     }
 
 }
-let img=document.getElementsByTagName("img")[0];
-img.onmousedown=draganddrop;
-function draganddrop(){
-    /*  Para arrastar el elemento sin errores. */
-    img.ondragstart=function(){
-        return false;
-    }
-
-    img.style.position="absolute";
-    img.style.zIndex="200";
-
-    /*Posicion respecto al body.*/
-    document.body.append(img);
-
-    /*Mover la imagen.*/
-    mover(event.pageX, event.pageY);
-    function mover(x, y){
-        img.style.left=x-img.offsetWidth/2+"px";
-        img.style.top=y-img.offsetHeight/2+"px";
-    }
-    function movimiento(e){
-        mover(event.pageX, event.pageY);
-    }
-    document.addEventListener('mousemove', movimiento);
-
-    /*Eliminamos el evento.*/
-    img.onmouseup=function(){
-        document.removeEventListener('mousemove', movimiento);
-        img.onmouseup=null;
-    }
-}
