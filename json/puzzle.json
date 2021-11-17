@@ -2,452 +2,542 @@
   {
     "posicion": 0,
     "simbolo": "H",
-    "elemento": "Hidrógeno";
+    "elemento": "Hidrógeno",
+    "color: azul";
   },
   {
     "posicion": 1,
     "simbolo": "He",
-    "elemento": "Helio";
+    "elemento": "Helio",
+    "color: cyan";
   },
   {
     "posicion": 2,
     "simbolo": "Li",
-    "elemento": "Litio";
+    "elemento": "Litio",
+    "color: naranja";
   },
   {
     "posicion": 3,
     "simbolo": "Be",
-    "elemento": "Berilio";
+    "elemento": "Berilio",
+    "color: lightnaranja";
   },
   {
     "posicion": 4,
     "simbolo": "B",
-    "elemento": "Boro";
+    "elemento": "Boro",
+    "color: verde";
   },
   {
     "posicion": 5,
     "simbolo": "C",
-    "elemento": "Carbono";
+    "elemento": "Carbono",
+    "color: azul";
   },
   {
     "posicion": 6,
     "simbolo": "N",
-    "elemento": "Nitrógeno";
+    "elemento": "Nitrógeno",
+    "color: azul";
   },
   {
     "posicion": 7,
     "simbolo": "O",
-    "elemento": "Oxígeno";
+    "elemento": "Oxígeno",
+    "color: azul";
   },
   {
     "posicion": 8,
     "simbolo": "F",
-    "elemento": "Flúor";
+    "elemento": "Flúor",
+    "color: morado";
   },
   {
     "posicion": 9,
     "simbolo": "Ne",
-    "elemento": "Neón";
+    "elemento": "Neón",
+    "color: cyan";
   },
   {
     "posicion": 10,
     "simbolo": "Na",
-    "elemento": "Sodio";
+    "elemento": "Sodio",
+    "color: naranja";
   },
   {
     "posicion": 11,
     "simbolo": "Mg",
-    "elemento": "Magnesio";
+    "elemento": "Magnesio",
+    "color: lightnaranja";
   },
   {
     "posicion": 12,
     "simbolo": "Al",
-    "elemento": "Aluminio";
+    "elemento": "Aluminio",
+    "color: lightverde";
   },
   {
     "posicion": 13,
     "simbolo": "Si",
-    "elemento": "Silicio";
+    "elemento": "Silicio",
+    "color: verde";
   },
   {
     "posicion": 14,
     "simbolo": "P",
-    "elemento": "Fósforo";
+    "elemento": "Fósforo",
+    "color: azul";
   },
   {
     "posicion": 15,
     "simbolo": "S",
-    "elemento": "Azufre";
+    "elemento": "Azufre",
+    "color: azul";
   },
   {
     "posicion": 16,
     "simbolo": "Cl",
-    "elemento": "Cloro";
+    "elemento": "Cloro",
+    "color: morado";
   },
   {
     "posicion": 17,
     "simbolo": "Ar",
-    "elemento": "Argón";
+    "elemento": "Argón",
+    "color: cyan";
   },
   {
     "posicion": 18,
     "simbolo": "K",
-    "elemento": "Potasio";
+    "elemento": "Potasio",
+    "color: naranja";
   },
   {
     "posicion": 19,
     "simbolo": "Ca",
-    "elemento": "Calcio";
+    "elemento": "Calcio",
+    "color: lightnaranja";
   },
   {
     "posicion": 20,
     "simbolo": "Sc",
-    "elemento": "Escandio";
+    "elemento": "Escandio",
+    "color: amarillo";
   },
   {
     "posicion": 21,
     "simbolo": "Ti",
-    "elemento": "Titanio";
+    "elemento": "Titanio",
+    "color: amarillo";
   },
   {
     "posicion": 22,
     "simbolo": "V",
-    "elemento": "Vandalio";
+    "elemento": "Vandalio",
+    "color: amarillo";
   },
   {
     "posicion": 23,
     "simbolo": "Cr",
-    "elemento": "Cromo";
+    "elemento": "Cromo",
+    "color: amarillo";
   },
   {
     "posicion": 24,
     "simbolo": "Mn",
-    "elemento": "Manganeso";
+    "elemento": "Manganeso",
+    "color: amarillo";
   },
   {
     "posicion": 25,
     "simbolo": "Fe",
-    "elemento": "Hierro";
+    "elemento": "Hierro",
+    "color: amarillo";
   },
   {
     "posicion": 26,
     "simbolo": "Co",
-    "elemento": "Cobalto";
+    "elemento": "Cobalto",
+    "color: amarillo";
   },
   {
     "posicion": 27,
     "simbolo": "Ni",
-    "elemento": "Níquel";
+    "elemento": "Níquel",
+    "color: amarillo";
   },
   {
     "posicion": 28,
     "simbolo": "Cu",
-    "elemento": "Cobre";
+    "elemento": "Cobre",
+    "color: amarillo";
   },
   {
     "posicion": 29,
     "simbolo": "Zn",
-    "elemento": "Zinc";
+    "elemento": "Zinc",
+    "color: amarillo";
   },
   {
     "posicion": 30,
     "simbolo": "Ga",
-    "elemento": "Galio";
+    "elemento": "Galio",
+    "color: lightverde";
   },
   {
     "posicion": 31,
     "simbolo": "Ge",
-    "elemento": "Germanio";
+    "elemento": "Germanio",
+    "color: verde";
   },
   {
     "posicion": 32,
     "simbolo": "As",
-    "elemento": "Arsénico";
+    "elemento": "Arsénico",
+    "color: verde";
   },
   {
     "posicion": 33,
     "simbolo": "Se",
-    "elemento": "Selenio";
+    "elemento": "Selenio",
+    "color: azul";
   },
   {
     "posicion": 34,
     "simbolo": "Br",
-    "elemento": "Bromo";
+    "elemento": "Bromo",
+    "color: morado";
   },
   {
     "posicion": 35,
     "simbolo": "Kr",
-    "elemento": "Kriptón";
+    "elemento": "Kriptón",
+    "color: cyan";
   },
   {
     "posicion": 36,
     "simbolo": "Rb",
-    "elemento": "Rubidio";
+    "elemento": "Rubidio",
+    "color: naranja";
   },
   {
     "posicion": 37,
     "simbolo": "Sr",
-    "elemento": "Estroncio";
+    "elemento": "Estroncio",
+    "color: lightnaranja";
   },
   {
     "posicion": 38,
     "simbolo": "Y",
-    "elemento": "Itrio";
+    "elemento": "Itrio",
+    "color: amarillo";
   },
   {
     "posicion": 39,
     "simbolo": "Zr",
-    "elemento": "Zirconio";
+    "elemento": "Zirconio",
+    "color: amarillo";
   },
   {
     "posicion": 40,
     "simbolo": "Nb",
-    "elemento": "Niobio";
+    "elemento": "Niobio",
+    "color: amarillo";
   },
   {
     "posicion": 41,
     "simbolo": "Mo",
-    "elemento": "Molibdeno";
+    "elemento": "Molibdeno",
+    "color: amarillo";
   },
   {
     "posicion": 42,
     "simbolo": "Tc",
-    "elemento": "Tecnecio";
+    "elemento": "Tecnecio",
+    "color: amarillo";
   },
   {
     "posicion": 43,
     "simbolo": "Ru",
-    "elemento": "Rutenio";
+    "elemento": "Rutenio",
+    "color: amarillo";
   },
   {
     "posicion": 44,
     "simbolo": "Rh",
-    "elemento": "Rodio";
+    "elemento": "Rodio",
+    "color: amarillo";
   },
   {
     "posicion": 45,
     "simbolo": "Pd",
-    "elemento": "Paladio";
+    "elemento": "Paladio",
+    "color: amarillo";
   },
   {
     "posicion": 46,
     "simbolo": "Ag",
-    "elemento": "Plata";
+    "elemento": "Plata",
+    "color: amarillo";
   },
   {
     "posicion": 47,
     "simbolo": "Cd",
-    "elemento": "Cadmio";
+    "elemento": "Cadmio",
+    "color: amarillo";
   },
   {
     "posicion": 48,
     "simbolo": "In",
-    "elemento": "Indio";
+    "elemento": "Indio",
+    "color: lightverde";
   },
   {
     "posicion": 49,
     "simbolo": "Sn",
-    "elemento": "Estaño";
+    "elemento": "Estaño",
+    "color: lightverde";
   },
   {
     "posicion": 50,
     "simbolo": "Sb",
-    "elemento": "Antimonio";
+    "elemento": "Antimonio",
+    "color: verde";
   },
   {
     "posicion": 51,
     "simbolo": "Te",
-    "elemento": "Telurio";
+    "elemento": "Telurio",
+    "color: verde";
   },
   {
     "posicion": 52,
     "simbolo": "I",
-    "elemento": "Yodo";
+    "elemento": "Yodo",
+    "color: morado";
   },
   {
     "posicion": 53,
     "simbolo": "Xe",
-    "elemento": "Xenón";
+    "elemento": "Xenón",
+    "color: cyan";
   },
   {
     "posicion": 54,
     "simbolo": "Cs",
-    "elemento": "Cesio";
+    "elemento": "Cesio",
+    "color: naranja";
   },
   {
     "posicion": 55,
     "simbolo": "Ba",
-    "elemento": "Bario";
+    "elemento": "Bario",
+    "color: lightnaranja";
   },
   {
     "posicion": 56,
     "simbolo": "Lu",
-    "elemento": "Lutecio";
+    "elemento": "Lutecio",
+    "color: blanco";
   },
   {
     "posicion": 57,
     "simbolo": "Hf",
-    "elemento": "Hafnio";
+    "elemento": "Hafnio",
+    "color: amarillo";
   },
   {
     "posicion": 58,
     "simbolo": "Ta",
-    "elemento": "Tantalio";
+    "elemento": "Tantalio",
+    "color: amarillo";
   },
   {
     "posicion": 59,
     "simbolo": "W",
-    "elemento": "Wolframio";
+    "elemento": "Wolframio",
+    "color: amarillo";
   },
   {
     "posicion": 60,
     "simbolo": "Re",
-    "elemento": "Renio";
+    "elemento": "Renio",
+    "color: amarillo";
   },
   {
     "posicion": 61,
     "simbolo": "Os",
-    "elemento": "Osmio";
+    "elemento": "Osmio",
+    "color: amarillo";
   },
   {
     "posicion": 62,
     "simbolo": "Ir",
-    "elemento": "Iridio";
+    "elemento": "Iridio",
+    "color: amarillo";
   },
   {
     "posicion": 63,
     "simbolo": "Pt",
-    "elemento": "Platino";
+    "elemento": "Platino",
+    "color: amarillo";
   },
   {
     "posicion": 64,
     "simbolo": "Au",
-    "elemento": "Oro";
+    "elemento": "Oro",
+    "color: amarillo";
   },
   {
     "posicion": 65,
     "simbolo": "Hg",
-    "elemento": "Mercurio";
+    "elemento": "Mercurio",
+    "color: amarillo";
   },
   {
     "posicion": 66,
     "simbolo": "Tl",
-    "elemento": "Talio";
+    "elemento": "Talio",
+    "color: lightverde";
   },
   {
     "posicion": 67,
     "simbolo": "Pb",
-    "elemento": "Plomo";
+    "elemento": "Plomo",
+    "color: lightverde";
   },
   {
     "posicion": 68,
     "simbolo": "Bi",
-    "elemento": "Bismuto";
+    "elemento": "Bismuto",
+    "color: lightverde";
   },
   {
     "posicion": 69,
     "simbolo": "Po",
-    "elemento": "Polonio";
+    "elemento": "Polonio",
+    "color: verde";
   },
   {
     "posicion": 70,
     "simbolo": "At",
-    "elemento": "Astato";
+    "elemento": "Astato",
+    "color: morado";
   },
   {
     "posicion": 71,
     "simbolo": "Rn",
-    "elemento": "Radón";
+    "elemento": "Radón",
+    "color: cyan";
   },
   {
     "posicion": 72,
     "simbolo": "Fr",
-    "elemento": "Francio";
+    "elemento": "Francio",
+    "color: naranja";
   },
   {
     "posicion": 73,
     "simbolo": "Ra",
-    "elemento": "Radio";
+    "elemento": "Radio",
+    "color: lightnaranja";
   },
   {
     "posicion": 74,
     "simbolo": "Lr",
-    "elemento": "Laurencio";
+    "elemento": "Laurencio",
+    "color: blanco";
   },
   {
     "posicion": 75,
     "simbolo": "Rf",
-    "elemento": "Rutherfordio";
+    "elemento": "Rutherfordio",
+    "color: amarillo";
   },
   {
     "posicion": 76,
     "simbolo": "Db",
-    "elemento": "Dubnio";
+    "elemento": "Dubnio",
+    "color: amarillo";
   },
   {
     "posicion": 77,
     "simbolo": "Sg",
-    "elemento": "Seaburgio";
+    "elemento": "Seaburgio",
+    "color: amarillo";
   },
   {
     "posicion": 78,
     "simbolo": "Bh",
-    "elemento": "Bohrio";
+    "elemento": "Bohrio",
+    "color: amarillo";
   },
   {
     "posicion": 79,
     "simbolo": "Hs",
-    "elemento": "Hassio";
+    "elemento": "Hassio",
+    "color: amarillo";
   },
   {
     "posicion": 80,
     "simbolo": "Mt",
-    "elemento": "Meitmerio";
+    "elemento": "Meitmerio",
+    "color: amarillo";
   },
   {
     "posicion": 81,
     "simbolo": "Ds",
-    "elemento": "Darmstatio";
+    "elemento": "Darmstatio",
+    "color: amarillo";
   },
   {
     "posicion": 82,
     "simbolo": "Rg",
-    "elemento": "Roenfgenio";
+    "elemento": "Roenfgenio",
+    "color: amarillo";
   },
   {
     "posicion": 83,
     "simbolo": "Cn",
-    "elemento": "Copernicio";
+    "elemento": "Copernicio",
+    "color: amarillo";
   },
   {
     "posicion": 84,
     "simbolo": "Nh",
-    "elemento": "Nibonio";
+    "elemento": "Nibonio",
+    "color: lightverde";
   },
   {
     "posicion": 85,
     "simbolo": "Fl",
-    "elemento": "Flerovio";
+    "elemento": "Flerovio",
+    "color: lightverde";
   },
   {
     "posicion": 86,
     "simbolo": "Mc",
-    "elemento": "Moscovio";
+    "elemento": "Moscovio",
+    "color: lightverde";
   },
   {
     "posicion": 87,
     "simbolo": "Lv",
-    "elemento": "Livermorio";
+    "elemento": "Livermorio",
+    "color: lightverde";
   },
   {
     "posicion": 88,
     "simbolo": "Ts",
-    "elemento": "Teneso";
+    "elemento": "Teneso",
+    "color:" "morado";
   },
   {
     "posicion": 89,
     "simbolo": "Og",
-    "elemento": "Oganesón";
+    "elemento": "Oganesón",
+    "color:" "cyan";
   },
 
 }
