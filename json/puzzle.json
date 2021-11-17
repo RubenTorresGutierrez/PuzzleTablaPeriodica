@@ -1,0 +1,453 @@
+{
+  {
+    "posicion": 0,
+    "simbolo": "H",
+    "elemento": "Hidrógeno";
+  },
+  {
+    "posicion": 1,
+    "simbolo": "He",
+    "elemento": "Helio";
+  },
+  {
+    "posicion": 2,
+    "simbolo": "Li",
+    "elemento": "Litio";
+  },
+  {
+    "posicion": 3,
+    "simbolo": "Be",
+    "elemento": "Berilio";
+  },
+  {
+    "posicion": 4,
+    "simbolo": "B",
+    "elemento": "Boro";
+  },
+  {
+    "posicion": 5,
+    "simbolo": "C",
+    "elemento": "Carbono";
+  },
+  {
+    "posicion": 6,
+    "simbolo": "N",
+    "elemento": "Nitrógeno";
+  },
+  {
+    "posicion": 7,
+    "simbolo": "O",
+    "elemento": "Oxígeno";
+  },
+  {
+    "posicion": 8,
+    "simbolo": "F",
+    "elemento": "Flúor";
+  },
+  {
+    "posicion": 9,
+    "simbolo": "Ne",
+    "elemento": "Neón";
+  },
+  {
+    "posicion": 10,
+    "simbolo": "Na",
+    "elemento": "Sodio";
+  },
+  {
+    "posicion": 11,
+    "simbolo": "Mg",
+    "elemento": "Magnesio";
+  },
+  {
+    "posicion": 12,
+    "simbolo": "Al",
+    "elemento": "Aluminio";
+  },
+  {
+    "posicion": 13,
+    "simbolo": "Si",
+    "elemento": "Silicio";
+  },
+  {
+    "posicion": 14,
+    "simbolo": "P",
+    "elemento": "Fósforo";
+  },
+  {
+    "posicion": 15,
+    "simbolo": "S",
+    "elemento": "Azufre";
+  },
+  {
+    "posicion": 16,
+    "simbolo": "Cl",
+    "elemento": "Cloro";
+  },
+  {
+    "posicion": 17,
+    "simbolo": "Ar",
+    "elemento": "Argón";
+  },
+  {
+    "posicion": 18,
+    "simbolo": "K",
+    "elemento": "Potasio";
+  },
+  {
+    "posicion": 19,
+    "simbolo": "Ca",
+    "elemento": "Calcio";
+  },
+  {
+    "posicion": 20,
+    "simbolo": "Sc",
+    "elemento": "Escandio";
+  },
+  {
+    "posicion": 21,
+    "simbolo": "Ti",
+    "elemento": "Titanio";
+  },
+  {
+    "posicion": 22,
+    "simbolo": "V",
+    "elemento": "Vandalio";
+  },
+  {
+    "posicion": 23,
+    "simbolo": "Cr",
+    "elemento": "Cromo";
+  },
+  {
+    "posicion": 24,
+    "simbolo": "Mn",
+    "elemento": "Manganeso";
+  },
+  {
+    "posicion": 25,
+    "simbolo": "Fe",
+    "elemento": "Hierro";
+  },
+  {
+    "posicion": 26,
+    "simbolo": "Co",
+    "elemento": "Cobalto";
+  },
+  {
+    "posicion": 27,
+    "simbolo": "Ni",
+    "elemento": "Níquel";
+  },
+  {
+    "posicion": 28,
+    "simbolo": "Cu",
+    "elemento": "Cobre";
+  },
+  {
+    "posicion": 29,
+    "simbolo": "Zn",
+    "elemento": "Zinc";
+  },
+  {
+    "posicion": 30,
+    "simbolo": "Ga",
+    "elemento": "Galio";
+  },
+  {
+    "posicion": 31,
+    "simbolo": "Ge",
+    "elemento": "Germanio";
+  },
+  {
+    "posicion": 32,
+    "simbolo": "As",
+    "elemento": "Arsénico";
+  },
+  {
+    "posicion": 33,
+    "simbolo": "Se",
+    "elemento": "Selenio";
+  },
+  {
+    "posicion": 34,
+    "simbolo": "Br",
+    "elemento": "Bromo";
+  },
+  {
+    "posicion": 35,
+    "simbolo": "Kr",
+    "elemento": "Kriptón";
+  },
+  {
+    "posicion": 36,
+    "simbolo": "Rb",
+    "elemento": "Rubidio";
+  },
+  {
+    "posicion": 37,
+    "simbolo": "Sr",
+    "elemento": "Estroncio";
+  },
+  {
+    "posicion": 38,
+    "simbolo": "Y",
+    "elemento": "Itrio";
+  },
+  {
+    "posicion": 39,
+    "simbolo": "Zr",
+    "elemento": "Zirconio";
+  },
+  {
+    "posicion": 40,
+    "simbolo": "Nb",
+    "elemento": "Niobio";
+  },
+  {
+    "posicion": 41,
+    "simbolo": "Mo",
+    "elemento": "Molibdeno";
+  },
+  {
+    "posicion": 42,
+    "simbolo": "Tc",
+    "elemento": "Tecnecio";
+  },
+  {
+    "posicion": 43,
+    "simbolo": "Ru",
+    "elemento": "Rutenio";
+  },
+  {
+    "posicion": 44,
+    "simbolo": "Rh",
+    "elemento": "Rodio";
+  },
+  {
+    "posicion": 45,
+    "simbolo": "Pd",
+    "elemento": "Paladio";
+  },
+  {
+    "posicion": 46,
+    "simbolo": "Ag",
+    "elemento": "Plata";
+  },
+  {
+    "posicion": 47,
+    "simbolo": "Cd",
+    "elemento": "Cadmio";
+  },
+  {
+    "posicion": 48,
+    "simbolo": "In",
+    "elemento": "Indio";
+  },
+  {
+    "posicion": 49,
+    "simbolo": "Sn",
+    "elemento": "Estaño";
+  },
+  {
+    "posicion": 50,
+    "simbolo": "Sb",
+    "elemento": "Antimonio";
+  },
+  {
+    "posicion": 51,
+    "simbolo": "Te",
+    "elemento": "Telurio";
+  },
+  {
+    "posicion": 52,
+    "simbolo": "I",
+    "elemento": "Yodo";
+  },
+  {
+    "posicion": 53,
+    "simbolo": "Xe",
+    "elemento": "Xenón";
+  },
+  {
+    "posicion": 54,
+    "simbolo": "Cs",
+    "elemento": "Cesio";
+  },
+  {
+    "posicion": 55,
+    "simbolo": "Ba",
+    "elemento": "Bario";
+  },
+  {
+    "posicion": 56,
+    "simbolo": "Lu",
+    "elemento": "Lutecio";
+  },
+  {
+    "posicion": 57,
+    "simbolo": "Hf",
+    "elemento": "Hafnio";
+  },
+  {
+    "posicion": 58,
+    "simbolo": "Ta",
+    "elemento": "Tantalio";
+  },
+  {
+    "posicion": 59,
+    "simbolo": "W",
+    "elemento": "Wolframio";
+  },
+  {
+    "posicion": 60,
+    "simbolo": "Re",
+    "elemento": "Renio";
+  },
+  {
+    "posicion": 61,
+    "simbolo": "Os",
+    "elemento": "Osmio";
+  },
+  {
+    "posicion": 62,
+    "simbolo": "Ir",
+    "elemento": "Iridio";
+  },
+  {
+    "posicion": 63,
+    "simbolo": "Pt",
+    "elemento": "Platino";
+  },
+  {
+    "posicion": 64,
+    "simbolo": "Au",
+    "elemento": "Oro";
+  },
+  {
+    "posicion": 65,
+    "simbolo": "Hg",
+    "elemento": "Mercurio";
+  },
+  {
+    "posicion": 66,
+    "simbolo": "Tl",
+    "elemento": "Talio";
+  },
+  {
+    "posicion": 67,
+    "simbolo": "Pb",
+    "elemento": "Plomo";
+  },
+  {
+    "posicion": 68,
+    "simbolo": "Bi",
+    "elemento": "Bismuto";
+  },
+  {
+    "posicion": 69,
+    "simbolo": "Po",
+    "elemento": "Polonio";
+  },
+  {
+    "posicion": 70,
+    "simbolo": "At",
+    "elemento": "Astato";
+  },
+  {
+    "posicion": 71,
+    "simbolo": "Rn",
+    "elemento": "Radón";
+  },
+  {
+    "posicion": 72,
+    "simbolo": "Fr",
+    "elemento": "Francio";
+  },
+  {
+    "posicion": 73,
+    "simbolo": "Ra",
+    "elemento": "Radio";
+  },
+  {
+    "posicion": 74,
+    "simbolo": "Lr",
+    "elemento": "Laurencio";
+  },
+  {
+    "posicion": 75,
+    "simbolo": "Rf",
+    "elemento": "Rutherfordio";
+  },
+  {
+    "posicion": 76,
+    "simbolo": "Db",
+    "elemento": "Dubnio";
+  },
+  {
+    "posicion": 77,
+    "simbolo": "Sg",
+    "elemento": "Seaburgio";
+  },
+  {
+    "posicion": 78,
+    "simbolo": "Bh",
+    "elemento": "Bohrio";
+  },
+  {
+    "posicion": 79,
+    "simbolo": "Hs",
+    "elemento": "Hassio";
+  },
+  {
+    "posicion": 80,
+    "simbolo": "Mt",
+    "elemento": "Meitmerio";
+  },
+  {
+    "posicion": 81,
+    "simbolo": "Ds",
+    "elemento": "Darmstatio";
+  },
+  {
+    "posicion": 82,
+    "simbolo": "Rg",
+    "elemento": "Roenfgenio";
+  },
+  {
+    "posicion": 83,
+    "simbolo": "Cn",
+    "elemento": "Copernicio";
+  },
+  {
+    "posicion": 84,
+    "simbolo": "Nh",
+    "elemento": "Nibonio";
+  },
+  {
+    "posicion": 85,
+    "simbolo": "Fl",
+    "elemento": "Flerovio";
+  },
+  {
+    "posicion": 86,
+    "simbolo": "Mc",
+    "elemento": "Moscovio";
+  },
+  {
+    "posicion": 87,
+    "simbolo": "Lv",
+    "elemento": "Livermorio";
+  },
+  {
+    "posicion": 88,
+    "simbolo": "Ts",
+    "elemento": "Teneso";
+  },
+  {
+    "posicion": 89,
+    "simbolo": "Og",
+    "elemento": "Oganesón";
+  },
+
+}

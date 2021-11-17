@@ -1,0 +1,92 @@
+/*  
+    Abel Mansilla Felipe <amansillafelipe.guadalupe@alumnado.fundacionloyola.net>
+    Juanjo Carrasco Rodríguez <jcarrascorodriguez.guadalupe@alumnado.fundacionloyola.net>
+    Alejandro Moreno Camacho <amorenocamacho.guadalupe@alumnado.fundacionloyola.net>
+    Rubén Torres Gutiérrez <rtorresgutierrez.guadalupe@alumnado.fundacionloyola.net>
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #1c2b2d;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin: 1.25em 0;
+}
+
+/***** MAIN *****/
+
+/*** ELEMENTOS ***/
+#elementos{
+    position: relative;
+}
+
+/*** TABLA ***/
+.tabla{
+    /* width: 1280px; */
+    width: 96.240601504%;
+    display: grid;
+    /* grid-template-columns: repeat(18, 60px); */
+    grid-template-columns: repeat(18, 4.6875%);
+    /* grid-template-columns: repeat(18, 4.4vw); */
+    /* grid-template-rows: repeat(7, 70px); */
+    /* grid-template-rows: repeat(7, 4.375em); */
+    /* grid-template-rows: repeat(7, 13vh); */
+    grid-auto-rows: (4.375em, auto);
+    grid-gap: 10px;
+    margin: 0 auto;
+}
+
+.tabla > div{
+    /* width: 55px; */
+    width: 91.666666667%; /* Respecto al grid-template-colums */
+    /* height: 65px; */
+    height: 4.0625em;
+    /* margin: 15px; */
+}
+
+/*** COLORES ***/
+.azul{
+    border: 2px solid rgb(93, 110, 165);    
+}
+
+.naranja{
+    border: 2px solid rgb(221, 131, 48);    
+}
+
+.lightnaranja{
+    border: 2px solid rgb(223, 161, 104);    
+}
+
+.blanco{
+    border: 2px solid #ccc;    
+}
+
+.amarillo{
+    border: 2px solid rgb(247, 227, 48);    
+}
+
+.lightverde{
+    border: 2px solid rgb(150, 248, 70);    
+}
+
+.verde{
+    border: 2px solid rgb(22, 131, 36);    
+}
+
+.morado{
+    border: 2px solid rgb(92, 27, 245);    
+}
+
+.cyan{
+    border: 2px solid rgb(36, 204, 255);    
+}
