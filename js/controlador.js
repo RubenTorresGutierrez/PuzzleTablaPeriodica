@@ -63,7 +63,7 @@ class Controlador{
 
       function GetGridElementsPosition(index){
         console.log(index)
-        console.log(document.getElementsByClassName('div'));
+        const colCount = document.getElementsByClassName('tabla').style.cssText= 'grid-template-columns'.split(' ').length;
 
         const row = Math.floor(index / colCount);
         const col = index % colCount;
