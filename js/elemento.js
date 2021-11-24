@@ -18,52 +18,33 @@
  */
 export class Elemento{
 
-    constructor(div, velocidad){
+    constructor(div, velocidad, posicion, simbolo, nombre, color){
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.div = div;
 
-        // Índice del objeto JSON que se va a cargar
-        this.indice = Math.floor(Math.random() * 89);
         // Elemento
         this.elemento = null;
         // Posicion
-        this.posicion = null;        
+        this.posicion = posicion;        
         // Símbolo del elemento
-        this.simbolo = null;
+        this.simbolo = simbolo;
         //Nombre del elemento
-        this.nombre = null;
+        this.nombre = nombre;
         // Color del elemento
-        this.color = null;
+        this.color = color;
         // Posición left del muñeco
         this.x = 0;
         // Velocidad a la que avanza el muñeco
         this.vX = velocidad;
         
-        // Llamar al método cargar los datos del JSON
-        this.cargarDatos();
         // Llamar al método para crear el elemento
         this.crear();
 
     }
 
-    cargarDatos(){
-
-        // Cargar el objeto JSON
-        fetch('./json/puzzle.json')
-        .then(response => response.json())
-        .then(data => {
-            this.posicion = data[this.indice].posicion;
-            this.simbolo = data[this.indice].simbolo;
-            this.nombre = data[this.indice].nombre;
-            this.color = data[this.indice].color;
-        });
-
-    }
-
     crear(){
 
-        console.log(this);
         // Crear el div
         this.elemento = document.createElement('div');
         // CSS

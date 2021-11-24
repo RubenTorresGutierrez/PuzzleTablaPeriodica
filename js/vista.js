@@ -36,8 +36,7 @@ export class Vista{
     crearElementos(){
 
         this.sprites.push(new Sprite(this.contenedorElementos, 5));
-        this.elementos.push(new Elemento(this.contenedorElementos, 5));
-
+        
     }
 
     /**

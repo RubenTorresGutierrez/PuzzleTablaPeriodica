@@ -45,11 +45,15 @@ class Controlador{
       // Atributos vista
       this.vista.contenedorElementos = document.getElementById('elementos');
 
+      // Atributos modelo
+      this.modelo.contenedorElementos = this.vista.contenedorElementos;
+
       // COMIENZO DEL JUEGO
       // Creación de elementos
-      window.setInterval(this.vista.crearElementos.bind(this.vista), 2000);
+      window.setInterval(this.crear.bind(this), 2000);
       window.setInterval(this.vista.movimiento.bind(this.vista), 100);
 
+      
       //PRUEBA___________________
       ponerId();
 
@@ -65,6 +69,13 @@ class Controlador{
             GetGridElementsPosition(i);
         })
       }
+    }
+
+    crear(){
+
+      this.vista.crearElementos.call(this.vista);
+      this.modelo.cargarDatos.call(this.modelo);
+
     }
 }
 
