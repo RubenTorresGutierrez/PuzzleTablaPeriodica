@@ -45,8 +45,10 @@ export class Vista{
     movimiento(){
 
         // Llamar a la función para mover los muñecos
-        for(let i = 0; i<this.sprites.length;i++)
+        for(let i = 0; i<this.sprites.length;i++){
             this.sprites[i].mover();
+            this.elementos[i].mover();
+        }
 
     }
 

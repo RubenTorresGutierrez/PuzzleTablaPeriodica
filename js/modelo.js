@@ -33,7 +33,7 @@ export class Modelo{
         .then(datos => {
 
             // Índice del objeto JSON que se va a cargar
-            let indice = Math.floor(Math.random() * 89);
+            let indice = Math.floor(Math.random() * 89) + 1;
             
             // Crear un objeto Elemento en el array de elementos
             this.elementos.push(new Elemento(

@@ -1,6 +1,6 @@
 /**
  *  @file Elemento | Puzzle Tabla Periódica
- *  @description Clase que sirve para crear y mover los elementos de la tabla periódica
+ *  @description Clase que sirve para crear los elementos de la tabla periódica
  *  @version 1.0.0
  *  @author Abel Mansilla Felipe <amansillafelipe.guadalupe@alumnado.fundacionloyola.net>
  *  @author Juanjo Carrasco Rodríguez <jcarrascorodriguez.guadalupe@alumnado.fundacionloyola.net>
@@ -14,11 +14,14 @@
 /**
  * Clase que sirve para crear y mover los elementos
  * @param div {HTMLElement} Contenedor donde se almacenan y se mueven los elementos
- * @param velocidad {int} Pixeles que se moverá hacia la derecha el elemento
+ * @param posicion {Int} Posicion
+ * @param simbolo {String}
+ * @param nombre {String}
+ * @param color {String}
  */
 export class Elemento{
 
-    constructor(div, velocidad, posicion, simbolo, nombre, color){
+    constructor(div, posicion, simbolo, nombre, color){
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.div = div;
@@ -33,10 +36,6 @@ export class Elemento{
         this.nombre = nombre;
         // Color del elemento
         this.color = color;
-        // Posición left del muñeco
-        this.x = 0;
-        // Velocidad a la que avanza el muñeco
-        this.vX = velocidad;
         
         // Llamar al método para crear el elemento
         this.crear();

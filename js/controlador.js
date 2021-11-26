@@ -64,12 +64,7 @@ class Controlador{
           if(!div.classList.contains('vacio'))
             div.setAttribute('data-value', contador++)
       }
-
-      function prueba(){
-        document.getElementsByClassName('tabla')[0].addEventListener('click', function(e){
-            /*console.log(document.querySelectorAll('.tabla div'))*/
-        })
-      }
+      
     }
 
     crear(){
