@@ -53,7 +53,7 @@ class Controlador{
       window.setInterval(this.crear.bind(this), 2000);
       window.setInterval(this.vista.movimiento.bind(this.vista), 100);
 
-      
+
       //PRUEBA___________________
       ponerId();
 
@@ -61,7 +61,8 @@ class Controlador{
         let divs = document.querySelectorAll('.tabla div')
         let contador = 0
         for (let div of divs)
-          div.setAttribute('data-value', contador++)
+          if(!div.classList.contains('vacio'))
+            div.setAttribute('data-value', contador++)
       }
 
       function prueba(){
