@@ -1,4 +1,4 @@
-/** 
+/**
  *  @file Sprite | Puzzle Tabla Periódica
  *  @description Clase que sirve para crear y mover los muñecos
  *  @version 1.0.0
@@ -54,6 +54,7 @@ export class Sprite{
         this.img.style.position = 'absolute';
         this.img.classList.add('personaje');
         this.img.style.left = `${this.x}px`;
+        this.img.style.bottom = `15px`;
         // Añadir la imagen al contenedor
         this.div.appendChild(this.img);
 
