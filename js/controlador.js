@@ -62,7 +62,7 @@ class Controlador{
 
       function prueba(){
         document.getElementsByClassName('tabla')[0].addEventListener('click', function(e){
-            GetGridElementsPosition(i);
+            /*console.log(document.querySelectorAll('.tabla div'))*/
         })
       }
     }
