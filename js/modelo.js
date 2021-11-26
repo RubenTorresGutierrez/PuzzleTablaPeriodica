@@ -47,21 +47,15 @@ export class Modelo{
 
         });
 
-        // Cargar el objeto JSON
-        // fetch('./json/puzzle.json')
-        // .then(response => response.json())
-        // .then(datos => {
-        //     for (const dato of datos) {
-        //         this.elementos.push(new Elemento(
-        //             this.contenedorElementos,
-        //             5,
-        //             dato.posicion,
-        //             dato.simbolo,
-        //             dato.nombre,
-        //             dato.color
-        //         ));
-        //     }
-        // });
+    }
+
+    asignarId(){
+
+        let divs = document.querySelectorAll('.tabla div')
+        let contador = 0
+        for (let div of divs)
+          if(!div.classList.contains('vacio'))
+            div.setAttribute('data-value', contador++)
 
     }
 

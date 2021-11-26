@@ -47,24 +47,14 @@ class Controlador{
 
       // Atributos modelo
       this.modelo.contenedorElementos = this.vista.contenedorElementos;
+      // Asignar id a los divs
+      this.modelo.asignarId();
 
       // COMIENZO DEL JUEGO
       // Creación de elementos
       window.setInterval(this.crear.bind(this), 2000);
       window.setInterval(this.vista.movimiento.bind(this.vista), 100);
 
-
-      //PRUEBA___________________
-      ponerId();
-
-      function ponerId(){
-        let divs = document.querySelectorAll('.tabla div')
-        let contador = 0
-        for (let div of divs)
-          if(!div.classList.contains('vacio'))
-            div.setAttribute('data-value', contador++)
-      }
-      
     }
 
     crear(){
