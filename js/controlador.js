@@ -59,7 +59,9 @@ class Controlador{
 
     crear(){
 
+      // Llamar a crear muñecos
       this.vista.crearElementos.call(this.vista);
+      // Llamar a crear elementos
       this.modelo.cargarDatos.call(this.modelo);
 
     }

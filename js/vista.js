@@ -13,7 +13,7 @@
 
  // IMPORTACIONES
  import {Sprite} from './sprite.js';
- import {Elemento} from './elemento.js';
+ import {VistaElemento} from './vistaElemento.js';
 
  /**
   * Clase vista que sirve para manejar el diseño de la web
@@ -36,6 +36,7 @@ export class Vista{
     crearElementos(){
 
         this.sprites.push(new Sprite(this.contenedorElementos, 5));
+        this.elementos.push(new VistaElemento(this.contenedorElementos, 5));
         
     }
 
@@ -47,7 +48,7 @@ export class Vista{
         // Llamar a la función para mover los muñecos
         for(let i = 0; i<this.sprites.length;i++){
             this.sprites[i].mover();
-            this.elementos[i].mover();
+            //this.elementos[i].mover();
         }
 
     }

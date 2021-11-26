@@ -14,16 +14,16 @@
 /**
  * Clase que sirve para crear y mover los elementos
  * @param div {HTMLElement} Contenedor donde se almacenan y se mueven los elementos
- * @param posicion {Int} Posicion
- * @param simbolo {String}
- * @param nombre {String}
- * @param color {String}
+ * @param posicion {Int} Posicion donde se coloca el elemento en el grid
+ * @param simbolo {String} Simbolo del elemento
+ * @param nombre {String} Nombre del elemento
+ * @param color {String} Color que tiene el elemento
  */
 export class Elemento{
 
     constructor(div, posicion, simbolo, nombre, color){
 
-        // Contenedor donde se almacenan y se mueven los muñecos
+        // Contenedor donde se almacenan los muñecos
         this.div = div;
 
         // Elemento
@@ -36,6 +36,9 @@ export class Elemento{
         this.nombre = nombre;
         // Color del elemento
         this.color = color;
+
+        // Posición left del muñeco
+        this.x = 30;
         
         // Llamar al método para crear el elemento
         this.crear();

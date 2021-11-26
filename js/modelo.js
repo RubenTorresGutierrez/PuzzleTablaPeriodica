@@ -38,7 +38,6 @@ export class Modelo{
             // Crear un objeto Elemento en el array de elementos
             this.elementos.push(new Elemento(
                 this.contenedorElementos,
-                5,
                 datos[indice].posicion,
                 datos[indice].simbolo,
                 datos[indice].nombre,

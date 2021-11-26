@@ -10,7 +10,7 @@
  */
 
  'use strict'
- 
+
 /**
  * Clase que sirve para crear y mover los elementos
  * @param div {HTMLElement} Contenedor donde se almacenan y se mueven los elementos
@@ -22,11 +22,14 @@
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.div = div;
-
-        // Posición left del muñeco
-        this.x = 30;
         // Velocidad a la que avanza el muñeco
         this.vX = velocidad;
+
+    }
+
+    mover(){
+
+
 
     }
 
