@@ -12,10 +12,11 @@
 /**
  * Clase que sirve para crear y mover los muñecos
  * @param div {HTMLElement} Contenedor donde se almacenan y se mueven los muñecos
+ * @param velocidad {int} Pixeles que se moverá hacia la derecha el elemento
  */
 export class Sprite{
 
-    constructor(div){
+    constructor(div, velocidad){
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.div = div;
@@ -32,7 +33,7 @@ export class Sprite{
         // Posición left del muñeco
         this.x = 0;
         // Velocidad a la que avanza el muñeco
-        this.vX = 5;
+        this.vX = velocidad;
         // Llamar a la función para crear el muñeco
         this.crear();
 
@@ -70,7 +71,7 @@ export class Sprite{
             this.img.src = this.imagen[this.indice++];
         }
         // Comprueba que el muñeco no pase los límites de la pantalla (restandole el ancho del muñeco)
-        if(this.x < this.div.clientWidth - 29){
+        if(this.x < this.div.clientWidth - 30){
             // Se avanzan vX píxeles hacia la derecha
             this.x += this.vX;
             this.img.style.left = `${this.x}px`;

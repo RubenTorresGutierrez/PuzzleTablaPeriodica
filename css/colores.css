@@ -1,0 +1,11 @@
+:root{
+    --azul: hsl(226 44% 51%);
+    --naranja: hsl(29 78% 53%);
+    --light-naranja: hsl(29 53% 64%);
+    --blanco: hsl(0 0% 80%);
+    --amarillo: hsl(54 81% 58%);
+    --light-verde: hsl(93 72% 62%);
+    --verde: hsl(128 83% 30%);
+    --morado: hsl(258 89% 53%);
+    --cyan: hsl(194 86% 57%);
+}

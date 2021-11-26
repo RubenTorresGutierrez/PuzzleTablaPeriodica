@@ -13,17 +13,20 @@
 
  // IMPORTACIONES
  import {Sprite} from './sprite.js';
+ import {Elemento} from './elemento.js';
 
  /**
   * Clase vista que sirve para manejar el diseño de la web
   */
 export class Vista{
 
+    
     constructor(){
-
+        
         this.contenedorElementos = null;
         this.imagen = [];
-        this.sprites = []
+        this.sprites = [];
+        this.elementos = [];
 
     }
 
@@ -32,8 +35,8 @@ export class Vista{
      */
     crearElementos(){
 
-        this.sprites.push(new Sprite(this.contenedorElementos))
-
+        this.sprites.push(new Sprite(this.contenedorElementos, 5));
+        
     }
 
     /**
@@ -41,10 +44,48 @@ export class Vista{
      */
     movimiento(){
 
-        // Llamar a la función para mover el muñeco
+        // Llamar a la función para mover los muñecos
         for(let i = 0; i<this.sprites.length;i++)
             this.sprites[i].mover();
 
     }
 
+}
+
+
+// FALTA INTEGRARLO
+// let img=document.getElementsByTagName("img")[0];
+// img.onmousedown = draganddrop;
+
+function draganddrop(){
+
+    /*  Para arrastar el elemento sin errores. */
+    img.ondragstart = function(){
+        return false;
+    }
+
+    img.style.position = "absolute";
+    img.style.zIndex = "200";
+
+    /*Posicion respecto al body.*/
+    document.body.append(img);
+
+    /*Mover la imagen.*/
+    mover(event.pageX, event.pageY);
+    function mover(x, y){
+        img.style.left = `${x-img.offsetWidth/2}px`;
+        img.style.top = `${y-img.offsetHeight/2}px`;
+    }
+
+    function movimiento(e){
+        mover(event.pageX, event.pageY);
+    }
+
+    document.addEventListener('mousemove', movimiento);
+
+    /*Eliminamos el evento.*/
+    img.onmouseup=function(){
+        document.removeEventListener('mousemove', movimiento);
+        img.onmouseup=null;
+    }
 }
