@@ -29,7 +29,7 @@ export class Elemento{
         // Elemento
         this.elemento = null;
         // Posicion
-        this.posicion = posicion;        
+        this.posicion = posicion;
         // Símbolo del elemento
         this.simbolo = simbolo;
         //Nombre del elemento
@@ -39,7 +39,7 @@ export class Elemento{
 
         // Posición left del muñeco
         this.x = 30;
-        
+
         // Llamar al método para crear el elemento
         this.crear();
 
@@ -51,7 +51,7 @@ export class Elemento{
         this.elemento = document.createElement('div');
         // CSS
         this.elemento.classList.add('elemento-neon');
-        this.elemento.style.left = `${this.x}px`;
+        this.elemento.style.left = `0px`;
         this.elemento.style.color = `var(--${this.color})`;
         this.elemento.style.boxShadow = `inset 0 0 0.5em 0 var(--${this.color}), 0 0 0.5em 0 var(--${this.color})`;
 
@@ -70,6 +70,9 @@ export class Elemento{
         // Añadir el elemento al contenedor
         this.div.appendChild(this.elemento);
 
+    }
+    borrar(){
+      this.elemento.remove();
     }
 
 }

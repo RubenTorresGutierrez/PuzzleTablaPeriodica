@@ -20,9 +20,9 @@
   */
 export class Vista{
 
-    
+
     constructor(){
-        
+        this.contador=0;
         this.contenedorElementos = null;
         this.imagen = [];
         this.sprites = [];
@@ -34,10 +34,19 @@ export class Vista{
      * Crea un objeto de la clase Sprite() dentro del array sprites[]
      */
     crearElementos(){
+      console.log(this.elementos.length)
+        if(this.contador >= 14){
+          this.contador = 0;
+        }
 
-        this.sprites.push(new Sprite(this.contenedorElementos, 5));
-        this.elementos.push(new VistaElemento(this.contenedorElementos, 5));
-        
+
+        if(this.elementos.length >= 14){
+          this.sprites.pop();
+          this.elementos.pop();
+        }
+        //this.sprites.push(new Sprite(this.contenedorElementos, 5));
+        this.elementos.push(new VistaElemento(this.contenedorElementos, 5, this.contador));
+        this.contador++;
     }
 
     /**
@@ -46,9 +55,9 @@ export class Vista{
     movimiento(){
 
         // Llamar a la función para mover los muñecos
-        for(let i = 0; i<this.sprites.length;i++){
-            this.sprites[i].mover();
-            //this.elementos[i].mover();
+        for(let i = 0; i<this.elementos.length;i++){
+            //this.sprites[i].mover();
+            this.elementos[i].mover();
         }
 
     }

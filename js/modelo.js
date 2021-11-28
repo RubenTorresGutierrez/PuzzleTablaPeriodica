@@ -1,4 +1,4 @@
-/** 
+/**
  *  @file Modelo | Puzzle Tabla Periódica
  *  @description Clase que sirve para manejar los diferentes datos que vaya a tener la web
  *  @version 1.0.0
@@ -34,7 +34,7 @@ export class Modelo{
 
             // Índice del objeto JSON que se va a cargar
             let indice = Math.floor(Math.random() * 89) + 1;
-            
+
             // Crear un objeto Elemento en el array de elementos
             this.elementos.push(new Elemento(
                 this.contenedorElementos,

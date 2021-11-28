@@ -76,7 +76,7 @@ export class Sprite{
             // Se avanzan vX píxeles hacia la derecha
             this.x += this.vX;
             this.img.style.left = `${this.x}px`;
-        }else this.borrar();
+        }else {this.borrar()};
 
     }
 
@@ -84,7 +84,6 @@ export class Sprite{
      * Borra el muñeco
      */
     borrar(){
-
         this.img.remove();
 
     }
