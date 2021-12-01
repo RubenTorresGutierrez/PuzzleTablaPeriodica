@@ -63,8 +63,8 @@ class Controlador{
     /**
      * Crea los elementos (clase modelo y clase vista) y los muñecos
      */
-    crear(){      
-      
+    crear(){
+
       // Obtener el elemento
       let elementoModelo = this.modelo.obtenerElemento();
 
@@ -72,7 +72,7 @@ class Controlador{
       this.vista.crearElementos.call(this.vista, elementoModelo);
 
     }
-    
+
 }
 
 let app = new Controlador();

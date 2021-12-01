@@ -23,11 +23,11 @@ export class Vista{
 
     constructor(){
         this.contador=0;
-        this.contenedorElementos = null;
+        this.contenedorElementos = null;  //HTMLDiv
         this.imagen = [];
         this.sprites = [];
         this.elementos = [];
-
+        this.elementoAgarrado = null
     }
 
     /**
@@ -35,9 +35,15 @@ export class Vista{
      */
     crearElementos(elementoModelo){
 
-        this.elementos.push(new VistaElemento(this.contenedorElementos, 5, elementoModelo));
+        this.elementos.push(new VistaElemento(this, this.contenedorElementos, 5, elementoModelo));
         this.sprites.push(new Sprite(this.contenedorElementos, 5));
-        
+
+    }
+
+    registraDrag(vistaElemento){
+      this.elementoAgarrado = vistaElemento
+      //this.elementoAgarrado.elemento.style.display = 'none'
+      console.log(this.elementoAgarrado)
     }
 
     /**
@@ -50,45 +56,5 @@ export class Vista{
             this.sprites[i].mover();
             this.elementos[i].mover();
         }
-
-    }
-
-}
-
-
-// FALTA INTEGRARLO
-// let img=document.getElementsByTagName("img")[0];
-// img.onmousedown = draganddrop;
-
-function draganddrop(){
-
-    /*  Para arrastar el elemento sin errores. */
-    img.ondragstart = function(){
-        return false;
-    }
-
-    img.style.position = "absolute";
-    img.style.zIndex = "200";
-
-    /*Posicion respecto al body.*/
-    document.body.append(img);
-
-    /*Mover la imagen.*/
-    mover(event.pageX, event.pageY);
-    function mover(x, y){
-        img.style.left = `${x-img.offsetWidth/2}px`;
-        img.style.top = `${y-img.offsetHeight/2}px`;
-    }
-
-    function movimiento(e){
-        mover(event.pageX, event.pageY);
-    }
-
-    document.addEventListener('mousemove', movimiento);
-
-    /*Eliminamos el evento.*/
-    img.onmouseup=function(){
-        document.removeEventListener('mousemove', movimiento);
-        img.onmouseup=null;
     }
 }
