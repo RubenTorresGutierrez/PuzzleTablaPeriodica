@@ -21,13 +21,22 @@
 export class Vista{
 
 
-    constructor(){
-        this.contador=0;
+    constructor(controlador){
+        
+        // Controlador
+        this.controlador = controlador;
+
+        // Contenedor donde se almacenan y se mueven los muñecos
         this.contenedorElementos = null;  //HTMLDiv
-        this.imagen = [];
+
+        // Array de objetos de la clase Sprite
         this.sprites = [];
+        // Array de objetos de la clase VistaElemento
         this.elementos = [];
-        this.elementoAgarrado = null
+
+
+        this.elementoAgarrado = null;
+
     }
 
     /**
@@ -41,11 +50,13 @@ export class Vista{
     }
 
     registraDrag(vistaElemento){
+
       this.elementoAgarrado = vistaElemento
       //this.elementoAgarrado.elemento.style.display = 'none'
       console.log(this.elementoAgarrado)
-    }
 
+    }
+    
     /**
      * Llama al método mover() de todos los objetos de la clase Sprite existentes
      */
@@ -56,5 +67,12 @@ export class Vista{
             this.sprites[i].mover();
             this.elementos[i].mover();
         }
+    }
+
+    eliminarElemento(elemento){
+
+        this.controlador.modelo.eliminarElemento(elemento.elementoModelo);
+        elemento.elemento.remove();
+
     }
 }

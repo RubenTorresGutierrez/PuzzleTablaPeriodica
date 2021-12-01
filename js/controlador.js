@@ -23,7 +23,7 @@ class Controlador{
     constructor(){
 
         // OBJETOS
-        this.vista = new Vista();
+        this.vista = new Vista(this);
         this.modelo = new Modelo();
 
         // HTML

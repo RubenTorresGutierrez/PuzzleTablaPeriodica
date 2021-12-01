@@ -20,7 +20,9 @@ export class Modelo{
 
     constructor(){
 
+        // Array de objetos de la clase Elemento
         this.elementos = [];
+        // Array de índices de los elementos ya creados
         this.indices = [];
 
     }
@@ -36,12 +38,12 @@ export class Modelo{
         .then(datos => {
             
             // Crear un objeto Elemento en el array de elementos
-            for(let e of datos)
+            for(let elemento of datos)
                 this.elementos.push(new Elemento(
-                    e.posicion,
-                    e.simbolo,
-                    e.nombre,
-                    e.color
+                    elemento.posicion,
+                    elemento.simbolo,
+                    elemento.nombre,
+                    elemento.color
                 ));
 
         });
@@ -54,8 +56,8 @@ export class Modelo{
     obtenerElemento(){
 
         // Comprobar si el array de índices está lleno
-        if(this.indices.length == 90)
-            this.indices = [];
+        //if(this.indices.length == 90)
+            //this.indices = [];
 
         // Crear índice aleatorio del elemento que se va a crear 
         // y comprobar si ya está creado
@@ -69,8 +71,20 @@ export class Modelo{
         
         // Añadir el índice al array de índices
         this.indices.push(indice);
-        
+
         return this.elementos[indice];
+
+    }
+
+    /**
+     * Elimina el objeto que recibe de controlador, que a su vez este recibe de vista
+     * @param {Object} elemento 
+     */
+    eliminarElemento(elemento){
+
+        for(let i = 0; i < this.elementos.length; i++)
+            if(this.elementos[i] == elemento)
+                this.indices.splice(i, 1);
 
     }
 

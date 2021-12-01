@@ -18,14 +18,19 @@
  */
  export class VistaElemento{
 
-    constructor(controlador, contenedorElementos, velocidad, elementoModelo){
+    constructor(vista, contenedorElementos, velocidad, elementoModelo){
 
-        this.controlador = controlador  //La Vista
+        // Vista
+        this.vista = vista
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.contenedorElementos = contenedorElementos;
 
+        // Datos del elemento del modelo
         this.elementoModelo = elementoModelo;
+
+        // Div que se forma con los datos del elemento
+        this.elemento = null;   //HTMLDiv
         // Posicion
         this.posicion = elementoModelo.posicion;
         // Símbolo del elemento
@@ -34,8 +39,6 @@
         this.nombre = elementoModelo.nombre;
         // Color del elemento
         this.color = elementoModelo.color;
-
-        this.elemento = null;
 
         // Posición left del muñeco
         this.x = 30;
@@ -74,8 +77,8 @@
         // Añadir el elemento al contenedor
         this.contenedorElementos.appendChild(this.elemento);
 
-        this.elemento.setAttribute("draggable", "true")
-        this.elemento.ondragstart = this.controlador.registraDrag.bind(this.controlador, this)
+        // Añadir drag and drop
+        this.dragAndDrop();
 
     }
 
@@ -98,7 +101,17 @@
      */
     borrar(){
 
-        this.elemento.remove();
+        this.vista.eliminarElemento(this);
+
+    }
+
+    /**
+     * Drag and Drop de los elementos
+     */
+    dragAndDrop(){
+
+        this.elemento.setAttribute("draggable", "true");
+        this.elemento.ondragstart = this.vista.registraDrag.bind(this.controlador, this);
 
     }
 
