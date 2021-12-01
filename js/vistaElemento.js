@@ -18,7 +18,9 @@
  */
  export class VistaElemento{
 
-    constructor(contenedorElementos, velocidad, elementoModelo){
+    constructor(controlador, contenedorElementos, velocidad, elementoModelo){
+
+        this.controlador = controlador  //La Vista
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.contenedorElementos = contenedorElementos;
@@ -32,6 +34,8 @@
         this.nombre = elementoModelo.nombre;
         // Color del elemento
         this.color = elementoModelo.color;
+
+        this.elemento = null;
 
         // Posición left del muñeco
         this.x = 30;
@@ -69,6 +73,9 @@
 
         // Añadir el elemento al contenedor
         this.contenedorElementos.appendChild(this.elemento);
+
+        this.elemento.setAttribute("draggable", "true")
+        this.elemento.ondragstart = this.controlador.registraDrag.bind(this.controlador, this)
 
     }
 
