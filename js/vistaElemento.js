@@ -23,6 +23,7 @@
         // Contenedor donde se almacenan y se mueven los muñecos
         this.contenedorElementos = contenedorElementos;
 
+        this.elementoModelo = elementoModelo;
         // Posicion
         this.posicion = elementoModelo.posicion;
         // Símbolo del elemento
