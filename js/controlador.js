@@ -38,6 +38,7 @@ class Controlador{
      * Realiza la ejecución principal del programa
      */
     iniciar(){
+
       // ATRIBUTOS
       // Atributos controlador
       this.main = document.getElementsByTagName('main')[0];
@@ -47,7 +48,9 @@ class Controlador{
 
       // Atributos modelo
       this.modelo.contenedorElementos = this.vista.contenedorElementos;
-      // Asignar id a los divs
+      // Llamar a crear elementos
+      this.modelo.cargarDatos.call(this.modelo);
+      // Asignar id a los divs del grid
       this.modelo.asignarId();
 
       // COMIENZO DEL JUEGO
@@ -57,14 +60,16 @@ class Controlador{
 
     }
 
-    crear(){
-
+    /**
+     * Crea los elementos (clase modelo y clase vista) y los muñecos
+     */
+    crear(){      
+      
       // Llamar a crear muñecos
-      this.vista.crearElementos.call(this.vista);
-      // Llamar a crear elementos
-      this.modelo.cargarDatos.call(this.modelo);
+      this.vista.crearElementos.call(this.vista, elemento);
 
     }
+    
 }
 
 let app = new Controlador();

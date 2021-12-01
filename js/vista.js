@@ -33,10 +33,10 @@ export class Vista{
     /**
      * Crea un objeto de la clase Sprite() dentro del array sprites[]
      */
-    crearElementos(){
+    crearElementos(elemento){
 
+        this.elementos.push(new VistaElemento(this.contenedorElementos, 5, elemento));
         this.sprites.push(new Sprite(this.contenedorElementos, 5));
-        this.elementos.push(new VistaElemento(this.contenedorElementos, 5));
         
     }
 
@@ -48,7 +48,7 @@ export class Vista{
         // Llamar a la función para mover los muñecos
         for(let i = 0; i<this.sprites.length;i++){
             this.sprites[i].mover();
-            //this.elementos[i].mover();
+            this.elementos[i].mover();
         }
 
     }

@@ -36,7 +36,7 @@ export class Elemento{
         this.nombre = nombre;
         // Color del elemento
         this.color = color;
-
+        
         // Posición left del muñeco
         this.x = 30;
         

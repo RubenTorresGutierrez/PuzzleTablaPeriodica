@@ -18,18 +18,40 @@
  */
  export class VistaElemento{
 
-    constructor(div, velocidad){
+    constructor(div, velocidad, elemento){
 
         // Contenedor donde se almacenan y se mueven los muñecos
         this.div = div;
+
+        // Elemento
+        this.elemento = elemento;
+        // Posición left del muñeco
+        this.x = 30;
         // Velocidad a la que avanza el muñeco
         this.vX = velocidad;
 
     }
 
+    /**
+     * Mueve el elemento
+     */
     mover(){
 
+        // Comprueba que el muñeco no pase los límites de la pantalla (restandole el ancho del elemento)
+        if(this.x < this.div.clientWidth - 30){
+            // Se avanzan vX píxeles hacia la derecha
+            this.x += this.vX;
+            this.elemento.style.left = `${this.x}px`;
+        }else this.borrar();
 
+    }
+
+    /**
+     * Borra el elemento
+     */
+    borrar(){
+
+        this.elemento.remove();
 
     }
 

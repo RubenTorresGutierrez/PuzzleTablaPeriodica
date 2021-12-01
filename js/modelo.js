@@ -22,18 +22,19 @@ export class Modelo{
 
         this.contenedorElementos = null;
         this.elementos = [];
+        this.indices = [];
 
     }
 
+    /**
+     * Carga los datos del JSON en un array de objetos de la clase Elemento
+     */
     cargarDatos(){
 
         // Cargar el objeto JSON
         fetch('./json/puzzle.json')
         .then(respuesta => respuesta.json())
         .then(datos => {
-
-            // Índice del objeto JSON que se va a cargar
-            let indice = Math.floor(Math.random() * 89) + 1;
             
             // Crear un objeto Elemento en el array de elementos
             this.elementos.push(new Elemento(
@@ -45,6 +46,30 @@ export class Modelo{
             ));
 
         });
+
+    }
+
+    /**
+     * Obtiene un elemento de manera aleatoria pero no repetido
+     */
+    obtenerElemento(){
+
+        // Comprobar si el array de índices está lleno
+        if(this.indices.length == 90)
+            this.indices = [];
+
+        // Crear índice aleatorio del elemento que se va a crear 
+        // y comprobar si ya está creado
+        let indice;
+        do{
+
+            // Índice del objeto JSON que se va a cargar
+            indice = Math.floor(Math.random() * 89) + 1;
+
+        }while(this.indices.includes(indice))
+        
+        // Añadir el índice al array de índices
+        this.indices.push(indice);
 
     }
 
