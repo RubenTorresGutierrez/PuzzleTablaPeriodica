@@ -33,9 +33,9 @@ export class Vista{
     /**
      * Crea un objeto de la clase Sprite() dentro del array sprites[]
      */
-    crearElementos(elemento){
+    crearElementos(elementoModelo){
 
-        this.elementos.push(new VistaElemento(this.contenedorElementos, 5, elemento));
+        this.elementos.push(new VistaElemento(this.contenedorElementos, 5, elementoModelo));
         this.sprites.push(new Sprite(this.contenedorElementos, 5));
         
     }

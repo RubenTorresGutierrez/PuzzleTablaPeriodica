@@ -14,20 +14,15 @@
 /**
  * Clase que sirve para crear y mover los elementos
  * @param div {HTMLElement} Contenedor donde se almacenan y se mueven los elementos
- * @param posicion {Int} Posicion donde se coloca el elemento en el grid
+ * @param posicion {Number} Posicion donde se coloca el elemento en el grid
  * @param simbolo {String} Simbolo del elemento
  * @param nombre {String} Nombre del elemento
  * @param color {String} Color que tiene el elemento
  */
 export class Elemento{
 
-    constructor(div, posicion, simbolo, nombre, color){
+    constructor(posicion, simbolo, nombre, color){
 
-        // Contenedor donde se almacenan los muñecos
-        this.div = div;
-
-        // Elemento
-        this.elemento = null;
         // Posicion
         this.posicion = posicion;
         // Símbolo del elemento
@@ -36,43 +31,7 @@ export class Elemento{
         this.nombre = nombre;
         // Color del elemento
         this.color = color;
-        
-        // Posición left del muñeco
-        this.x = 30;
 
-        // Llamar al método para crear el elemento
-        this.crear();
-
-    }
-
-    crear(){
-
-        // Crear el div
-        this.elemento = document.createElement('div');
-        // CSS
-        this.elemento.classList.add('elemento-neon');
-        this.elemento.style.left = `0px`;
-        this.elemento.style.color = `var(--${this.color})`;
-        this.elemento.style.boxShadow = `inset 0 0 0.5em 0 var(--${this.color}), 0 0 0.5em 0 var(--${this.color})`;
-
-        // Crear simbolo
-        let pSimbolo = document.createElement('p');
-        let textopSimbolo = document.createTextNode(this.simbolo);
-        pSimbolo.appendChild(textopSimbolo);
-        this.elemento.appendChild(pSimbolo);
-
-        // Crear nombre
-        let pNombre = document.createElement('p');
-        let textopNombre = document.createTextNode(this.nombre);
-        pNombre.appendChild(textopNombre);
-        this.elemento.appendChild(pNombre);
-
-        // Añadir el elemento al contenedor
-        this.div.appendChild(this.elemento);
-
-    }
-    borrar(){
-      this.elemento.remove();
     }
 
 }

@@ -20,7 +20,6 @@ export class Modelo{
 
     constructor(){
 
-        this.contenedorElementos = null;
         this.elementos = [];
         this.indices = [];
 
@@ -37,13 +36,13 @@ export class Modelo{
         .then(datos => {
             
             // Crear un objeto Elemento en el array de elementos
-            this.elementos.push(new Elemento(
-                this.contenedorElementos,
-                datos[indice].posicion,
-                datos[indice].simbolo,
-                datos[indice].nombre,
-                datos[indice].color
-            ));
+            for(let e of datos)
+                this.elementos.push(new Elemento(
+                    e.posicion,
+                    e.simbolo,
+                    e.nombre,
+                    e.color
+                ));
 
         });
 
@@ -70,6 +69,8 @@ export class Modelo{
         
         // Añadir el índice al array de índices
         this.indices.push(indice);
+        
+        return this.elementos[indice];
 
     }
 

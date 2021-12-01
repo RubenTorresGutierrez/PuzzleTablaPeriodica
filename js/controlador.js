@@ -65,8 +65,11 @@ class Controlador{
      */
     crear(){      
       
+      // Obtener el elemento
+      let elementoModelo = this.modelo.obtenerElemento();
+
       // Llamar a crear muñecos
-      this.vista.crearElementos.call(this.vista, elemento);
+      this.vista.crearElementos.call(this.vista, elementoModelo);
 
     }
     

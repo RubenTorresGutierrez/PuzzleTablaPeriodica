@@ -18,35 +18,66 @@
  */
  export class VistaElemento{
 
-    constructor(div, velocidad, elemento){
+    constructor(contenedorElementos, velocidad, elementoModelo){
 
         // Contenedor donde se almacenan y se mueven los muñecos
-        this.div = div;
+        this.contenedorElementos = contenedorElementos;
 
-        // Elemento
-        this.elemento = elemento;
+        // Posicion
+        this.posicion = elementoModelo.posicion;
+        // Símbolo del elemento
+        this.simbolo = elementoModelo.simbolo;
+        //Nombre del elemento
+        this.nombre = elementoModelo.nombre;
+        // Color del elemento
+        this.color = elementoModelo.color;
+
         // Posición left del muñeco
         this.x = 30;
         // Velocidad a la que avanza el muñeco
         this.vX = velocidad;
+
+        // Llamar al método para crear el elemento
+        this.crear();
+    }
+
+    /**
+     * Crea el elemento
+     */
+    crear(){
+
+        // Crear el div
+        this.elemento = document.createElement('div');
+        // CSS
+        this.elemento.classList.add('elemento-neon');
+        this.elemento.style.left = `0px`;
+        this.elemento.style.color = `var(--${this.color})`;
+        this.elemento.style.boxShadow = `inset 0 0 0.5em 0 var(--${this.color}), 0 0 0.5em 0 var(--${this.color})`;
+
+        // Crear simbolo
+        let pSimbolo = document.createElement('p');
+        let textopSimbolo = document.createTextNode(this.simbolo);
+        pSimbolo.appendChild(textopSimbolo);
+        this.elemento.appendChild(pSimbolo);
+
+        // Crear nombre
+        let pNombre = document.createElement('p');
+        let textopNombre = document.createTextNode(this.nombre);
+        pNombre.appendChild(textopNombre);
+        this.elemento.appendChild(pNombre);
+
+        // Añadir el elemento al contenedor
+        this.contenedorElementos.appendChild(this.elemento);
+
     }
 
     /**
      * Mueve el elemento
      */
     mover(){
-      this.element = document.getElementsByClassName('elemento-neon')[this.indice];
-      // Comprueba que el muñeco no pase los límites de la pantalla (restandole el ancho del muñeco)
-        if(this.x < (this.div.clientWidth - 95)){
-            // Se avanzan vX píxeles hacia la derecha
-            this.x += this.vX;
-            if(this.sw==0)
-              this.element.style.left = `${this.x}px`;
-            this.sw=0;
-        }else {this.borrar()};
 
         // Comprueba que el muñeco no pase los límites de la pantalla (restandole el ancho del elemento)
-        if(this.x < this.div.clientWidth - 30){
+        if(this.x < this.contenedorElementos.clientWidth - 30){
             // Se avanzan vX píxeles hacia la derecha
             this.x += this.vX;
             this.elemento.style.left = `${this.x}px`;
@@ -61,7 +92,6 @@
 
         this.elemento.remove();
 
-          this.element.remove();
     }
 
  }
