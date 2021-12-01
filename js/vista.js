@@ -20,9 +20,9 @@
   */
 export class Vista{
 
-    
+
     constructor(){
-        
+        this.contador=0;
         this.contenedorElementos = null;
         this.imagen = [];
         this.sprites = [];

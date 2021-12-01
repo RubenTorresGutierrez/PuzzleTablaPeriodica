@@ -1,4 +1,4 @@
-/** 
+/**
  *  @file Modelo | Puzzle Tabla Periódica
  *  @description Clase que sirve para manejar los diferentes datos que vaya a tener la web
  *  @version 1.0.0

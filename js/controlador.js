@@ -56,7 +56,7 @@ class Controlador{
       // COMIENZO DEL JUEGO
       // Creación de elementos
       window.setInterval(this.crear.bind(this), 2000);
-      window.setInterval(this.vista.movimiento.bind(this.vista), 100);
+      window.setInterval(this.vista.movimiento.bind(this.vista), 80);
 
     }
 
