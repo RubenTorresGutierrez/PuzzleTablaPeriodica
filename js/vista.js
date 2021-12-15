@@ -26,6 +26,8 @@ export class Vista{
         // Controlador
         this.controlador = controlador;
 
+	// Tabla donde se encajan los elementos
+	this.tabla = null;
         // Contenedor donde se almacenan y se mueven los muñecos
         this.contenedorElementos = null;  //HTMLDiv
 
@@ -53,7 +55,12 @@ export class Vista{
 
       this.elementoAgarrado = vistaElemento
       //this.elementoAgarrado.elemento.style.display = 'none'
-      console.log(this.elementoAgarrado)
+
+    }
+
+    comprobarElemento(){
+
+	console.log('drop');
 
     }
     
