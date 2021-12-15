@@ -36,7 +36,7 @@ export class Modelo{
         fetch('./json/puzzle.json')
         .then(respuesta => respuesta.json())
         .then(datos => {
-            
+
             // Crear un objeto Elemento en el array de elementos
             for(let elemento of datos)
                 this.elementos.push(new Elemento(
@@ -59,7 +59,7 @@ export class Modelo{
         //if(this.indices.length == 90)
             //this.indices = [];
 
-        // Crear índice aleatorio del elemento que se va a crear 
+        // Crear índice aleatorio del elemento que se va a crear
         // y comprobar si ya está creado
         let indice;
         do{
@@ -68,7 +68,7 @@ export class Modelo{
             indice = Math.floor(Math.random() * 89) + 1;
 
         }while(this.indices.includes(indice))
-        
+
         // Añadir el índice al array de índices
         this.indices.push(indice);
 
@@ -78,7 +78,7 @@ export class Modelo{
 
     /**
      * Elimina el objeto que recibe de controlador, que a su vez este recibe de vista
-     * @param {Object} elemento 
+     * @param {Object} elemento
      */
     eliminarElemento(elemento){
 

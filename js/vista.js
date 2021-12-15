@@ -22,7 +22,7 @@ export class Vista{
 
 
     constructor(controlador){
-        
+
         // Controlador
         this.controlador = controlador;
 
@@ -56,7 +56,7 @@ export class Vista{
       console.log(this.elementoAgarrado)
 
     }
-    
+
     /**
      * Llama al método mover() de todos los objetos de la clase Sprite existentes
      */
@@ -74,5 +74,5 @@ export class Vista{
         this.controlador.modelo.eliminarElemento(elemento.elementoModelo);
         elemento.elemento.remove();
 
-    }
+    }z
 }
