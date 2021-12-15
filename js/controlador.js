@@ -39,25 +39,35 @@ class Controlador{
      */
     iniciar(){
 
-      // ATRIBUTOS
-      // Atributos controlador
-      this.main = document.getElementsByTagName('main')[0];
+	// ATRIBUTOS
+	// Atributos controlador
+	this.main = document.getElementsByTagName('main')[0];
 
-      // Atributos vista
-      this.vista.contenedorElementos = document.getElementById('elementos');
+	// Atributos vista
+	this.vista.tabla = document.getElementById('tabla');
+	this.vista.contenedorElementos = document.getElementById('elementos');
 
-      // Atributos modelo
-      this.modelo.contenedorElementos = this.vista.contenedorElementos;
-      // Llamar a crear elementos
-      this.modelo.cargarDatos.call(this.modelo);
-      // Asignar id a los divs del grid
-      this.modelo.asignarId();
+	// Atributos modelo
+	this.modelo.contenedorElementos = this.vista.contenedorElementos;
+	// Llamar a crear elementos
+	this.modelo.cargarDatos.call(this.modelo);
+	// Asignar id a los divs del grid
+	this.modelo.asignarId();
 
-      // COMIENZO DEL JUEGO
-      // Creación de elementos
-      window.setInterval(this.crear.bind(this), 2000);
-      window.setInterval(this.vista.movimiento.bind(this.vista), 80);
+	// COMIENZO DEL JUEGO
+	// Creación de elementos
+	window.setInterval(this.crear.bind(this), 2000);
+	window.setInterval(this.vista.movimiento.bind(this.vista), 80);
 
+	// Aplicar ondrop a todos los divs del grid
+	for(const div of this.vista.tabla.children)
+	    if(div.classList != 'vacio')
+		div.ondrop = this.vista.comprobarElemento.bind(this.vista);
+
+	// Quitar comportamiento por defecto para que se pueda hacer drop
+	document.ondragover = function(event) {
+	    event.preventDefault();
+	};
     }
 
     /**
@@ -75,4 +85,7 @@ class Controlador{
 
 }
 
+function algo(){
+    console.log('hola')
+}
 let app = new Controlador();

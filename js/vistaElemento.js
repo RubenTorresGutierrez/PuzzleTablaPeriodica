@@ -111,7 +111,7 @@
     dragAndDrop(){
 
         this.elemento.setAttribute("draggable", "true");
-        this.elemento.ondragstart = this.vista.registraDrag.bind(this.controlador, this);
+        this.elemento.ondragstart = this.vista.registraDrag.bind(this.vista, this);
 
     }
 

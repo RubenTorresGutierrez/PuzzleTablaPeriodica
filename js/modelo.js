@@ -9,9 +9,10 @@
  *  @license LGPL-3.0-or-later
  */
 
- 'use strict'
+'use strict'
 
- import {Elemento} from './elemento.js';
+import {Elemento} from './elemento.js';
+// import {Marcador} from './marcador';
 
 /**
  * Clase modelo que sirve para manejar los diferentes datos que vaya a tener la web
@@ -24,6 +25,8 @@ export class Modelo{
         this.elementos = [];
         // Array de índices de los elementos ya creados
         this.indices = [];
+	// Marcador que gestiona la puntuación
+	// this.marcador = new Marcador();
 
     }
 
