@@ -58,9 +58,13 @@ export class Vista{
 
     }
 
-    comprobarElemento(){
+    comprobarElemento(e){
 
-	console.log('drop');
+	     console.log('Elemento: '+this.elementoAgarrado.posicion);
+       console.log('Div: '+e.target.getAttribute('data-value'));
+       if(this.elementoAgarrado.posicion == e.target.getAttribute('data-value')){
+         console.log('Bien')
+       }
 
     }
 

@@ -27,7 +27,6 @@ export class Modelo{
         this.indices = [];
 	// Marcador que gestiona la puntuación
 	// this.marcador = new Marcador();
-
     }
 
     /**
@@ -93,7 +92,7 @@ export class Modelo{
 
     asignarId(){
 
-        let divs = document.querySelectorAll('.tabla div')
+        let divs = document.querySelectorAll('#tabla div')
         let contador = 0
         for (let div of divs)
           if(!div.classList.contains('vacio'))
